@@ -11,10 +11,7 @@ class _DashPageState extends State<DashPage> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Text(
-        "데쉬보드",
-        style: TextStyle(fontSize: 50),
-      ),
+      body: Text("데쉬보드", style: TextStyle(fontSize: 50)),
     );
   }
 }

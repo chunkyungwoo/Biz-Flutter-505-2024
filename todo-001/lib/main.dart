@@ -14,7 +14,7 @@ class MainApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "TODO",
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: const TodoApp(),
+      home: const TodoHome(),
     );
   }
 }

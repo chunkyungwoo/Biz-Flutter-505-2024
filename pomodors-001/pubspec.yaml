@@ -1,8 +1,6 @@
 name: timer
 description: "A new Flutter project."
-
-publish_to: "none"
-
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
@@ -14,6 +12,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   settings_ui: ^2.0.2
   datetime_setting: ^2.0.2
+  shared_preferences: ^2.2.2
 
 dev_dependencies:
   flutter_test:
