@@ -18,7 +18,7 @@ class Todo {
     required this.content,
     required this.complete,
   });
-
+  // dynamic 도 object 처럼 모든 변수에 적용가능
   Map<String, dynamic> toMap() {
     return <String, dynamic>{
       'id': id,
@@ -27,7 +27,7 @@ class Todo {
       'edate': edate,
       'etime': etime,
       'content': content,
-      'complete': complete,
+      'complete': complete ? 1 : 0,
     };
   }
 
@@ -39,7 +39,7 @@ class Todo {
       edate: map['edate'] as String,
       etime: map['etime'] as String,
       content: map['content'] as String,
-      complete: map['complete'] as bool,
+      complete: map['complete'] == 1 ? true : false,
     );
   }
 
